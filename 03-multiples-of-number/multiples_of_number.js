@@ -1,10 +1,10 @@
 // define your function here
 
 const multiplesOf = (number, limit) => {
-    const multiples = [];
-    for (let i = 1; i <= limit / number; i++) {
-        multiples[i] = number * i;
+    const multiples = []
+    for (let i = 0; i < limit / number - 1; i++) {
+        multiples[i] = number * (i + 1);
     }
     return multiples;
 }
-console.log(multiplesOf(2, 26));
+console.log(multiplesOf(3, 50));
